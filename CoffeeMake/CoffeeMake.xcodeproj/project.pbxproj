@@ -9,20 +9,22 @@
 /* Begin PBXBuildFile section */
 		C8BBF9DA2566CBA500A2516D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8BBF9D92566CBA500A2516D /* AppDelegate.swift */; };
 		C8BBF9DC2566CBA500A2516D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8BBF9DB2566CBA500A2516D /* SceneDelegate.swift */; };
-		C8BBF9DE2566CBA500A2516D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8BBF9DD2566CBA500A2516D /* ViewController.swift */; };
+		C8BBF9DE2566CBA500A2516D /* CoffeeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8BBF9DD2566CBA500A2516D /* CoffeeViewController.swift */; };
 		C8BBF9E12566CBA500A2516D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8BBF9DF2566CBA500A2516D /* Main.storyboard */; };
 		C8BBF9E32566CBA900A2516D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8BBF9E22566CBA900A2516D /* Assets.xcassets */; };
 		C8BBF9E62566CBA900A2516D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8BBF9E42566CBA900A2516D /* LaunchScreen.storyboard */; };
 		C8BBF9F52566D34300A2516D /* Coffee.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8BBF9F42566D34300A2516D /* Coffee.swift */; };
 		C8BBF9F92566D3C400A2516D /* Syrop.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8BBF9F82566D3C400A2516D /* Syrop.swift */; };
 		C8BBF9FC2566D41900A2516D /* Sugar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8BBF9FB2566D41900A2516D /* Sugar.swift */; };
+		C8BBFA012566EC5C00A2516D /* SimpleCoffee.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8BBFA002566EC5C00A2516D /* SimpleCoffee.swift */; };
+		C8BBFA042566EF4F00A2516D /* CoffeeDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8BBFA032566EF4F00A2516D /* CoffeeDecorator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C8BBF9D62566CBA500A2516D /* CoffeeMake.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoffeeMake.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8BBF9D92566CBA500A2516D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C8BBF9DB2566CBA500A2516D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C8BBF9DD2566CBA500A2516D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C8BBF9DD2566CBA500A2516D /* CoffeeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeViewController.swift; sourceTree = "<group>"; };
 		C8BBF9E02566CBA500A2516D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C8BBF9E22566CBA900A2516D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C8BBF9E52566CBA900A2516D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -30,6 +32,8 @@
 		C8BBF9F42566D34300A2516D /* Coffee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coffee.swift; sourceTree = "<group>"; };
 		C8BBF9F82566D3C400A2516D /* Syrop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Syrop.swift; sourceTree = "<group>"; };
 		C8BBF9FB2566D41900A2516D /* Sugar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sugar.swift; sourceTree = "<group>"; };
+		C8BBFA002566EC5C00A2516D /* SimpleCoffee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleCoffee.swift; sourceTree = "<group>"; };
+		C8BBFA032566EF4F00A2516D /* CoffeeDecorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeDecorator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +66,7 @@
 		C8BBF9D82566CBA500A2516D /* CoffeeMake */ = {
 			isa = PBXGroup;
 			children = (
+				C8BBF9FF2566EC2100A2516D /* Decorator */,
 				C8BBF9F32566D2FA00A2516D /* Models */,
 				C8BBF9EF2566CC9F00A2516D /* Screens */,
 				C8BBF9EE2566CC6F00A2516D /* SupportingFiles */,
@@ -101,7 +106,7 @@
 		C8BBF9F12566CCD300A2516D /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				C8BBF9DD2566CBA500A2516D /* ViewController.swift */,
+				C8BBF9DD2566CBA500A2516D /* CoffeeViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -114,6 +119,15 @@
 				C8BBF9FB2566D41900A2516D /* Sugar.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		C8BBF9FF2566EC2100A2516D /* Decorator */ = {
+			isa = PBXGroup;
+			children = (
+				C8BBFA002566EC5C00A2516D /* SimpleCoffee.swift */,
+				C8BBFA032566EF4F00A2516D /* CoffeeDecorator.swift */,
+			);
+			path = Decorator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -186,11 +200,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C8BBF9DE2566CBA500A2516D /* ViewController.swift in Sources */,
+				C8BBF9DE2566CBA500A2516D /* CoffeeViewController.swift in Sources */,
 				C8BBF9F92566D3C400A2516D /* Syrop.swift in Sources */,
 				C8BBF9FC2566D41900A2516D /* Sugar.swift in Sources */,
+				C8BBFA042566EF4F00A2516D /* CoffeeDecorator.swift in Sources */,
 				C8BBF9DA2566CBA500A2516D /* AppDelegate.swift in Sources */,
 				C8BBF9DC2566CBA500A2516D /* SceneDelegate.swift in Sources */,
+				C8BBFA012566EC5C00A2516D /* SimpleCoffee.swift in Sources */,
 				C8BBF9F52566D34300A2516D /* Coffee.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
