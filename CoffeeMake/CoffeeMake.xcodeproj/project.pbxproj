@@ -13,6 +13,9 @@
 		C8BBF9E12566CBA500A2516D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8BBF9DF2566CBA500A2516D /* Main.storyboard */; };
 		C8BBF9E32566CBA900A2516D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8BBF9E22566CBA900A2516D /* Assets.xcassets */; };
 		C8BBF9E62566CBA900A2516D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8BBF9E42566CBA900A2516D /* LaunchScreen.storyboard */; };
+		C8BBF9F52566D34300A2516D /* Coffee.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8BBF9F42566D34300A2516D /* Coffee.swift */; };
+		C8BBF9F92566D3C400A2516D /* Syrop.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8BBF9F82566D3C400A2516D /* Syrop.swift */; };
+		C8BBF9FC2566D41900A2516D /* Sugar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8BBF9FB2566D41900A2516D /* Sugar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		C8BBF9E22566CBA900A2516D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C8BBF9E52566CBA900A2516D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C8BBF9E72566CBA900A2516D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C8BBF9F42566D34300A2516D /* Coffee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coffee.swift; sourceTree = "<group>"; };
+		C8BBF9F82566D3C400A2516D /* Syrop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Syrop.swift; sourceTree = "<group>"; };
+		C8BBF9FB2566D41900A2516D /* Sugar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sugar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,58 @@
 		C8BBF9D82566CBA500A2516D /* CoffeeMake */ = {
 			isa = PBXGroup;
 			children = (
-				C8BBF9D92566CBA500A2516D /* AppDelegate.swift */,
-				C8BBF9DB2566CBA500A2516D /* SceneDelegate.swift */,
-				C8BBF9DD2566CBA500A2516D /* ViewController.swift */,
-				C8BBF9DF2566CBA500A2516D /* Main.storyboard */,
-				C8BBF9E22566CBA900A2516D /* Assets.xcassets */,
-				C8BBF9E42566CBA900A2516D /* LaunchScreen.storyboard */,
+				C8BBF9F32566D2FA00A2516D /* Models */,
+				C8BBF9EF2566CC9F00A2516D /* Screens */,
+				C8BBF9EE2566CC6F00A2516D /* SupportingFiles */,
 				C8BBF9E72566CBA900A2516D /* Info.plist */,
 			);
 			path = CoffeeMake;
+			sourceTree = "<group>";
+		};
+		C8BBF9EE2566CC6F00A2516D /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				C8BBF9D92566CBA500A2516D /* AppDelegate.swift */,
+				C8BBF9DB2566CBA500A2516D /* SceneDelegate.swift */,
+				C8BBF9E22566CBA900A2516D /* Assets.xcassets */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		C8BBF9EF2566CC9F00A2516D /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				C8BBF9F12566CCD300A2516D /* Controllers */,
+				C8BBF9F02566CCA900A2516D /* Storyboards */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		C8BBF9F02566CCA900A2516D /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				C8BBF9DF2566CBA500A2516D /* Main.storyboard */,
+				C8BBF9E42566CBA900A2516D /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		C8BBF9F12566CCD300A2516D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C8BBF9DD2566CBA500A2516D /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		C8BBF9F32566D2FA00A2516D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C8BBF9F42566D34300A2516D /* Coffee.swift */,
+				C8BBF9F82566D3C400A2516D /* Syrop.swift */,
+				C8BBF9FB2566D41900A2516D /* Sugar.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +187,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				C8BBF9DE2566CBA500A2516D /* ViewController.swift in Sources */,
+				C8BBF9F92566D3C400A2516D /* Syrop.swift in Sources */,
+				C8BBF9FC2566D41900A2516D /* Sugar.swift in Sources */,
 				C8BBF9DA2566CBA500A2516D /* AppDelegate.swift in Sources */,
 				C8BBF9DC2566CBA500A2516D /* SceneDelegate.swift in Sources */,
+				C8BBF9F52566D34300A2516D /* Coffee.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
